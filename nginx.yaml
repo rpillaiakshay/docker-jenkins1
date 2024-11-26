@@ -1,0 +1,13 @@
+version: '3'
+services:
+  service1:
+    image: nginx:latest
+    container_name: nginxcont
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - net23
+networks:
+  net23:
+    driver: bridge  
